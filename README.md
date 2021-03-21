@@ -22,7 +22,7 @@ pod 'SDBaseClassLib'
 
 ## Author
 
-Liu Sida, yklsdq@163.com
+gd-liusida, 1163149842@qq.com
 
 ## License
 

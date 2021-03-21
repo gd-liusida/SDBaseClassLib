@@ -46,6 +46,7 @@
 		B6CCB01D3FBE430757A54F79 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B84B2B27C3B6C544157711CC /* Pods-SDBaseClassLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDBaseClassLib_Example.debug.xcconfig"; path = "Target Support Files/Pods-SDBaseClassLib_Example/Pods-SDBaseClassLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C7EB65BB2E8BAD53B0CD1B26 /* Pods-SDBaseClassLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDBaseClassLib_Example.release.xcconfig"; path = "Target Support Files/Pods-SDBaseClassLib_Example/Pods-SDBaseClassLib_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D59EB3B5260758FF004FDFEC /* SDBaseClassLib.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SDBaseClassLib.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FD9B210BCAF2D7310C24408A /* Pods_SDBaseClassLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDBaseClassLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,6 +100,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				D59EB3B5260758FF004FDFEC /* SDBaseClassLib.playground */,
 			);
 			name = "Example for SDBaseClassLib";
 			path = SDBaseClassLib;
@@ -207,6 +209,7 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SD;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
