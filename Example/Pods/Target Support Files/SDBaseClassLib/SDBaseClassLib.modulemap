@@ -1,0 +1,6 @@
+framework module SDBaseClassLib {
+  umbrella header "SDBaseClassLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
