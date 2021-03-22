@@ -41,6 +41,8 @@
 		D5A4333D2608B3EE00A1D2A4 /* SDTableView+SDReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A433392608B3EE00A1D2A4 /* SDTableView+SDReusable.swift */; };
 		D5A4333E2608B3EE00A1D2A4 /* SDCollectionView+SDReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A4333A2608B3EE00A1D2A4 /* SDCollectionView+SDReusable.swift */; };
 		D5A433442608B42B00A1D2A4 /* SDViewController+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A433432608B42B00A1D2A4 /* SDViewController+UIViewController.swift */; };
+		D5A4335A2608BEDF00A1D2A4 /* SDColor+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A433592608BEDF00A1D2A4 /* SDColor+UIColor.swift */; };
+		D5A433602608BF7B00A1D2A4 /* SDView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A4335F2608BF7B00A1D2A4 /* SDView+Layout.swift */; };
 		DBA2C21D85E3CF04A1D840E88389B01B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4ECE94144F4C0D4B0B4B9372BC247E /* ReplaceMe.swift */; };
 		E16B7DBD57640A50CF56D5B2F7F26290 /* SDBaseClassLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D80FDB9E695B1EF74BE5FAD5C96119FB /* SDBaseClassLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E7751F761111FD88DDC8B8D58E8F40A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
@@ -136,6 +138,8 @@
 		D5A433392608B3EE00A1D2A4 /* SDTableView+SDReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SDTableView+SDReusable.swift"; sourceTree = "<group>"; };
 		D5A4333A2608B3EE00A1D2A4 /* SDCollectionView+SDReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SDCollectionView+SDReusable.swift"; sourceTree = "<group>"; };
 		D5A433432608B42B00A1D2A4 /* SDViewController+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SDViewController+UIViewController.swift"; sourceTree = "<group>"; };
+		D5A433592608BEDF00A1D2A4 /* SDColor+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SDColor+UIColor.swift"; sourceTree = "<group>"; };
+		D5A4335F2608BF7B00A1D2A4 /* SDView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SDView+Layout.swift"; sourceTree = "<group>"; };
 		D6FCA82DAA2A70C692D65A1084993B44 /* SDBaseClassLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SDBaseClassLib.modulemap; sourceTree = "<group>"; };
 		D80FDB9E695B1EF74BE5FAD5C96119FB /* SDBaseClassLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDBaseClassLib-umbrella.h"; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
@@ -298,6 +302,8 @@
 				8E09B875213BFB09027B2FC76BF03174 /* SDData+Data.swift */,
 				8DB1EE8536253DD5A05CC9489C58D746 /* SDString+String.swift */,
 				D5A433432608B42B00A1D2A4 /* SDViewController+UIViewController.swift */,
+				D5A433592608BEDF00A1D2A4 /* SDColor+UIColor.swift */,
+				D5A4335F2608BF7B00A1D2A4 /* SDView+Layout.swift */,
 			);
 			name = Extensions;
 			path = SDBaseClassLib/Classes/Extensions;
@@ -531,8 +537,10 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SD;
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "奋斗青年";
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -624,11 +632,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5A433442608B42B00A1D2A4 /* SDViewController+UIViewController.swift in Sources */,
+				D5A433602608BF7B00A1D2A4 /* SDView+Layout.swift in Sources */,
 				DBA2C21D85E3CF04A1D840E88389B01B /* ReplaceMe.swift in Sources */,
 				60FF174C4CECF879204814F7F1AC42C0 /* SDBaseClassLib-dummy.m in Sources */,
 				D5A4333B2608B3EE00A1D2A4 /* SDNibLoadable.swift in Sources */,
 				379954C19F8EE4F7B6A5C8EB32E55AF1 /* SDCountdownButton.swift in Sources */,
 				D5A4333D2608B3EE00A1D2A4 /* SDTableView+SDReusable.swift in Sources */,
+				D5A4335A2608BEDF00A1D2A4 /* SDColor+UIColor.swift in Sources */,
 				16AB82E71D7B65CF9C89D89DB8186AA2 /* SDData+Data.swift in Sources */,
 				D5A4333C2608B3EE00A1D2A4 /* SDReusable.swift in Sources */,
 				80980716EADF19AFA9F9B3D2D66CA0BD /* SDString+String.swift in Sources */,
