@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UIView {
+public extension UIView {
     
     @discardableResult
     func setCornerRadius(_ cornerRaidus: CGFloat, maskToBounds: Bool = true) -> Self {
