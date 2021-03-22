@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     /// 输入 十进制数 获取颜色
     class func RGBA(red r: Float, green g: Float, blue b: Float, alpha a: Float) -> UIColor {
         

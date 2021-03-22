@@ -8,7 +8,7 @@
 import UIKit
 
 /// 控制定时器的类
-class SDTimerTool: NSObject {
+public class SDTimerTool: NSObject {
     
     /// GCD 定时器
     private var GCDTimer: DispatchSourceTimer?
@@ -27,7 +27,7 @@ class SDTimerTool: NSObject {
     
 }
 
-extension SDTimerTool {
+public extension SDTimerTool {
     /// 初始化得到GCD定时器
     func dispatchTime(_ timeInterval: TimeInterval, handleBlock: @escaping (() -> Void)) {
         if self.GCDTimer == nil {

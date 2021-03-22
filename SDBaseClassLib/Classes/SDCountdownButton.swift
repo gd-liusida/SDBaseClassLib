@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SDCountdownButton: UIButton {
+public class SDCountdownButton: UIButton {
 
     var countdownTime = SDTimerTool()
     var seconds: Int = 0
