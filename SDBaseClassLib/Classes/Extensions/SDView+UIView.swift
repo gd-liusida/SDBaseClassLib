@@ -11,6 +11,12 @@ import UIKit
 
 public extension UIView {
     
+    func addSubViews(_ views: [UIView]) {
+        views.forEach { (item) in
+            addSubview(item)
+        }
+    }
+    
     @discardableResult
     func setCornerRadius(_ cornerRaidus: CGFloat, maskToBounds: Bool = true) -> Self {
         layer.masksToBounds = maskToBounds
@@ -27,6 +33,12 @@ public extension UIView {
     @discardableResult
     func setBorderColor(_ borderColor: UIColor?) -> Self {
         layer.borderColor = borderColor?.cgColor
+        return self
+    }
+    
+    @discardableResult
+    func setBackgroundColor(_ color: UIColor?) -> Self {
+        backgroundColor = color
         return self
     }
 }
