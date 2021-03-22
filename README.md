@@ -1,6 +1,6 @@
 # SDBaseClassLib
 
-[![CI Status](https://img.shields.io/travis/Liu Sida/SDBaseClassLib.svg?style=flat)](https://travis-ci.org/Liu Sida/SDBaseClassLib)
+[![CI Status](https://img.shields.io/travis/gd-liusida/SDBaseClassLib.svg?style=flat)](https://travis-ci.org/gd-liusida/SDBaseClassLib)
 [![Version](https://img.shields.io/cocoapods/v/SDBaseClassLib.svg?style=flat)](https://cocoapods.org/pods/SDBaseClassLib)
 [![License](https://img.shields.io/cocoapods/l/SDBaseClassLib.svg?style=flat)](https://cocoapods.org/pods/SDBaseClassLib)
 [![Platform](https://img.shields.io/cocoapods/p/SDBaseClassLib.svg?style=flat)](https://cocoapods.org/pods/SDBaseClassLib)
