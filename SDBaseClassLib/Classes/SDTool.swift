@@ -21,14 +21,14 @@ struct Platform {
 public class SDTool: NSObject {
 
     /// 控制台输出内容
-    class func Log<T>(_ message: T, file: String = #file, method: String = #function, line: Int = #line) {
+    public class func log<T>(_ message: T, file: String = #file, method: String = #function, line: Int = #line) {
         if Platform.isSimulator {
             print("<\((file as NSString).lastPathComponent) : \(line)>, \(method) \(message)")
         }
     }
     
     /// data 转换JSON
-    class func dataOfJsonString(_ item: Any) -> String {
+    public class func dataOfJsonString(_ item: Any) -> String {
         do {
             let data = try JSONSerialization.data(withJSONObject: item, options: JSONSerialization.WritingOptions.init(rawValue: 0))
             if let jsonStr = String.init(data: data, encoding: .utf8) {
@@ -41,13 +41,13 @@ public class SDTool: NSObject {
     }
     
     /// JSON 转类型
-    class func jsonStringOfData(_ jsonStr: String) -> Any {
+    public class func jsonStringOfData(_ jsonStr: String) -> Any {
         guard let jsonData = jsonStr.data(using: String.Encoding.utf8) else { return "" }
         do {
             let item = try JSONSerialization.jsonObject(with: jsonData, options: JSONSerialization.ReadingOptions.mutableContainers)
             return item
         } catch  {
-            Log(error)
+            log(error)
         }
         return ""
     }
