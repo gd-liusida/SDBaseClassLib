@@ -141,7 +141,7 @@
 		D5A433432608B42B00A1D2A4 /* SDViewController+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SDViewController+UIViewController.swift"; sourceTree = "<group>"; };
 		D5A433592608BEDF00A1D2A4 /* SDColor+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SDColor+UIColor.swift"; sourceTree = "<group>"; };
 		D5A4335F2608BF7B00A1D2A4 /* SDView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SDView+Layout.swift"; sourceTree = "<group>"; };
-		D5A4336E2608C4D900A1D2A4 /* SDConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDConstans.swift; sourceTree = "<group>"; };
+		D5A4336E2608C4D900A1D2A4 /* SDConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SDConstans.swift; path = SDBaseClassLib/Classes/SDConstans.swift; sourceTree = "<group>"; };
 		D6FCA82DAA2A70C692D65A1084993B44 /* SDBaseClassLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SDBaseClassLib.modulemap; sourceTree = "<group>"; };
 		D80FDB9E695B1EF74BE5FAD5C96119FB /* SDBaseClassLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDBaseClassLib-umbrella.h"; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
