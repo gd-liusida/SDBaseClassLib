@@ -51,6 +51,36 @@ public class SDTool: NSObject {
         }
         return ""
     }
+    
+    public class func pathOfData<T: Codable>(_ type: T.Type, for resource: String, ofType: String) -> T? {
+        guard let data = SDTool.fileData(for: resource, of: ofType) else {
+            return nil
+        }
+        do {
+            let json = try JSONDecoder().decode(type, from: data)
+            return json
+        } catch {
+            SDTool.log("json error")
+        }
+        return nil
+    }
+    
+    public class func path(for resource: String, of type: String) -> String? {
+        guard let path = Bundle.main.path(forResource: resource, ofType: type) else {
+            return nil
+        }
+        return path
+    }
+    
+    public class func fileData(for resource: String, of type: String) -> Data? {
+        guard let path = SDTool.path(for: resource, of: type) else {
+            return nil
+        }
+        guard let data = NSData.init(contentsOfFile: path) else {
+            return nil
+        }
+        return data as Data
+    }
 
     
 }
