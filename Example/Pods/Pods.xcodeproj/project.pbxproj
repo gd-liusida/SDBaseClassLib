@@ -36,7 +36,10 @@
 		C50F54FC021F3EF4068CBEF1E2DCBA02 /* Pods-SDBaseClassLib_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B251AAF821D49EE7AA70C094FD8BD /* Pods-SDBaseClassLib_Example-dummy.m */; };
 		CA63ADACAC6C2BF1E30108E6BEF68A09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		D5A43305260898F900A1D2A4 /* SDNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A43304260898F900A1D2A4 /* SDNibLoadable.swift */; };
+		D5A433272608B14D00A1D2A4 /* SDReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A433232608B14C00A1D2A4 /* SDReusable.swift */; };
+		D5A433282608B14D00A1D2A4 /* SDNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A433242608B14D00A1D2A4 /* SDNibLoadable.swift */; };
+		D5A433292608B14D00A1D2A4 /* SDCollectionView+SDReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A433252608B14D00A1D2A4 /* SDCollectionView+SDReusable.swift */; };
+		D5A4332A2608B14D00A1D2A4 /* SDTableView+SDReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A433262608B14D00A1D2A4 /* SDTableView+SDReusable.swift */; };
 		DBA2C21D85E3CF04A1D840E88389B01B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4ECE94144F4C0D4B0B4B9372BC247E /* ReplaceMe.swift */; };
 		E16B7DBD57640A50CF56D5B2F7F26290 /* SDBaseClassLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D80FDB9E695B1EF74BE5FAD5C96119FB /* SDBaseClassLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E7751F761111FD88DDC8B8D58E8F40A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
@@ -127,7 +130,10 @@
 		D034694633CC1671757EE453961F6CA0 /* SDBaseClassLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SDBaseClassLib-Info.plist"; sourceTree = "<group>"; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		D45C0B312C9AB0913CF00626D0B31FD0 /* SDTimerTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SDTimerTool.swift; path = SDBaseClassLib/Classes/SDTimerTool.swift; sourceTree = "<group>"; };
-		D5A43304260898F900A1D2A4 /* SDNibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDNibLoadable.swift; sourceTree = "<group>"; };
+		D5A433232608B14C00A1D2A4 /* SDReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SDReusable.swift; path = SDBaseClassLib/Classes/SDReusable.swift; sourceTree = "<group>"; };
+		D5A433242608B14D00A1D2A4 /* SDNibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SDNibLoadable.swift; path = SDBaseClassLib/Classes/SDNibLoadable.swift; sourceTree = "<group>"; };
+		D5A433252608B14D00A1D2A4 /* SDCollectionView+SDReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SDCollectionView+SDReusable.swift"; path = "SDBaseClassLib/Classes/SDCollectionView+SDReusable.swift"; sourceTree = "<group>"; };
+		D5A433262608B14D00A1D2A4 /* SDTableView+SDReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SDTableView+SDReusable.swift"; path = "SDBaseClassLib/Classes/SDTableView+SDReusable.swift"; sourceTree = "<group>"; };
 		D6FCA82DAA2A70C692D65A1084993B44 /* SDBaseClassLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SDBaseClassLib.modulemap; sourceTree = "<group>"; };
 		D80FDB9E695B1EF74BE5FAD5C96119FB /* SDBaseClassLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDBaseClassLib-umbrella.h"; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
@@ -330,11 +336,14 @@
 		C2050E3EE723BB4E5AEA2141CC5407E2 /* SDBaseClassLib */ = {
 			isa = PBXGroup;
 			children = (
+				D5A433252608B14D00A1D2A4 /* SDCollectionView+SDReusable.swift */,
+				D5A433242608B14D00A1D2A4 /* SDNibLoadable.swift */,
+				D5A433232608B14C00A1D2A4 /* SDReusable.swift */,
+				D5A433262608B14D00A1D2A4 /* SDTableView+SDReusable.swift */,
 				DC4ECE94144F4C0D4B0B4B9372BC247E /* ReplaceMe.swift */,
 				665359A4DBB8D34D142F968401A77389 /* SDCountdownButton.swift */,
 				D45C0B312C9AB0913CF00626D0B31FD0 /* SDTimerTool.swift */,
 				C3BD9DFAFF5015E0409DD28C9B3D4A40 /* SDTool.swift */,
-				D5A43304260898F900A1D2A4 /* SDNibLoadable.swift */,
 				A5EFD0DE371C42CB9AC8EC3480F86796 /* Extensions */,
 				C46D229A411A962C767E3E9D71F620FF /* Pod */,
 				65E4AE168BB515401894BE9FB7697168 /* Support Files */,
@@ -603,11 +612,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBA2C21D85E3CF04A1D840E88389B01B /* ReplaceMe.swift in Sources */,
+				D5A433292608B14D00A1D2A4 /* SDCollectionView+SDReusable.swift in Sources */,
 				60FF174C4CECF879204814F7F1AC42C0 /* SDBaseClassLib-dummy.m in Sources */,
-				D5A43305260898F900A1D2A4 /* SDNibLoadable.swift in Sources */,
 				379954C19F8EE4F7B6A5C8EB32E55AF1 /* SDCountdownButton.swift in Sources */,
 				16AB82E71D7B65CF9C89D89DB8186AA2 /* SDData+Data.swift in Sources */,
+				D5A433282608B14D00A1D2A4 /* SDNibLoadable.swift in Sources */,
 				80980716EADF19AFA9F9B3D2D66CA0BD /* SDString+String.swift in Sources */,
+				D5A4332A2608B14D00A1D2A4 /* SDTableView+SDReusable.swift in Sources */,
+				D5A433272608B14D00A1D2A4 /* SDReusable.swift in Sources */,
 				40BFE79D43E625C64882441E10A9ED80 /* SDTimerTool.swift in Sources */,
 				36302CEA5F930E405850C50C426A9D2E /* SDTool.swift in Sources */,
 			);
