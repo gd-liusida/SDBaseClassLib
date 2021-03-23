@@ -9,9 +9,16 @@
 import Foundation
 
 public extension UILabel {
+    
     @discardableResult
     func setTextAlignment(_ textAlignment: NSTextAlignment) -> Self {
         self.textAlignment = textAlignment
+        return self
+    }
+    
+    @discardableResult
+    func setNumberLines(_ numberOfLines: Int) -> Self {
+        self.numberOfLines = numberOfLines
         return self
     }
     
@@ -27,6 +34,12 @@ public extension UILabel {
         return self
     }
     
+    @discardableResult
+    func setFont(_ font: UIFont) -> Self {
+        self.font = font
+        return self
+    }
+    
     ///添加下划线
     @discardableResult
     func underline() -> Self  {
@@ -36,12 +49,16 @@ public extension UILabel {
             attributedText = attributedString
         }
         return self
-        
     }
     
+    /// 添加删除线
     @discardableResult
-    func setNumberLines(_ numberOfLines: Int) -> Self {
-        self.numberOfLines = numberOfLines
+    func strikethrough() -> Self {
+        if let textString = self.text {
+            let attributedString = NSMutableAttributedString(string: textString)
+            attributedString.addAttributes([NSAttributedString.Key.strikethroughStyle: NSNumber.init(value: 1)], range: NSRange(location: 0, length: attributedString.length))
+            attributedText = attributedString
+        }
         return self
     }
 }
