@@ -48,6 +48,7 @@
 		D5A433AD2608FFCA00A1D2A4 /* SDButton+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A433AC2608FFCA00A1D2A4 /* SDButton+UIButton.swift */; };
 		D5A433E126091F6A00A1D2A4 /* SDTableView+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A433E026091F6A00A1D2A4 /* SDTableView+UITableView.swift */; };
 		D5A433E72609211200A1D2A4 /* SDUserDefaults+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A433E62609211200A1D2A4 /* SDUserDefaults+UserDefaults.swift */; };
+		D5A433F42609803B00A1D2A4 /* SDLabel+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A433F32609803B00A1D2A4 /* SDLabel+UILabel.swift */; };
 		DBA2C21D85E3CF04A1D840E88389B01B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4ECE94144F4C0D4B0B4B9372BC247E /* ReplaceMe.swift */; };
 		E16B7DBD57640A50CF56D5B2F7F26290 /* SDBaseClassLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D80FDB9E695B1EF74BE5FAD5C96119FB /* SDBaseClassLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E7751F761111FD88DDC8B8D58E8F40A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
@@ -150,6 +151,7 @@
 		D5A433AC2608FFCA00A1D2A4 /* SDButton+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SDButton+UIButton.swift"; sourceTree = "<group>"; };
 		D5A433E026091F6A00A1D2A4 /* SDTableView+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SDTableView+UITableView.swift"; sourceTree = "<group>"; };
 		D5A433E62609211200A1D2A4 /* SDUserDefaults+UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SDUserDefaults+UserDefaults.swift"; sourceTree = "<group>"; };
+		D5A433F32609803B00A1D2A4 /* SDLabel+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SDLabel+UILabel.swift"; sourceTree = "<group>"; };
 		D6FCA82DAA2A70C692D65A1084993B44 /* SDBaseClassLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SDBaseClassLib.modulemap; sourceTree = "<group>"; };
 		D80FDB9E695B1EF74BE5FAD5C96119FB /* SDBaseClassLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDBaseClassLib-umbrella.h"; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
@@ -318,6 +320,7 @@
 				D5A433AC2608FFCA00A1D2A4 /* SDButton+UIButton.swift */,
 				D5A433E026091F6A00A1D2A4 /* SDTableView+UITableView.swift */,
 				D5A433E62609211200A1D2A4 /* SDUserDefaults+UserDefaults.swift */,
+				D5A433F32609803B00A1D2A4 /* SDLabel+UILabel.swift */,
 			);
 			name = Extensions;
 			path = SDBaseClassLib/Classes/Extensions;
@@ -662,6 +665,7 @@
 				80980716EADF19AFA9F9B3D2D66CA0BD /* SDString+String.swift in Sources */,
 				40BFE79D43E625C64882441E10A9ED80 /* SDTimerTool.swift in Sources */,
 				D5A433AD2608FFCA00A1D2A4 /* SDButton+UIButton.swift in Sources */,
+				D5A433F42609803B00A1D2A4 /* SDLabel+UILabel.swift in Sources */,
 				36302CEA5F930E405850C50C426A9D2E /* SDTool.swift in Sources */,
 				D5A433E72609211200A1D2A4 /* SDUserDefaults+UserDefaults.swift in Sources */,
 				D5A4333E2608B3EE00A1D2A4 /* SDCollectionView+SDReusable.swift in Sources */,

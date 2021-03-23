@@ -28,6 +28,7 @@ public class SDTool: NSObject {
     }
     
     /// data 转换JSON
+    @discardableResult
     public class func dataOfJsonString(_ item: Any) -> String {
         do {
             let data = try JSONSerialization.data(withJSONObject: item, options: JSONSerialization.WritingOptions.init(rawValue: 0))
@@ -41,6 +42,7 @@ public class SDTool: NSObject {
     }
     
     /// JSON 转类型
+    @discardableResult
     public class func jsonStringOfData(_ jsonStr: String) -> Any {
         guard let jsonData = jsonStr.data(using: String.Encoding.utf8) else { return "" }
         do {
@@ -52,6 +54,7 @@ public class SDTool: NSObject {
         return ""
     }
     
+    @discardableResult
     public class func pathOfData<T: Codable>(_ type: T.Type, for resource: String, ofType: String) -> T? {
         guard let data = SDTool.fileData(for: resource, of: ofType) else {
             return nil
@@ -65,6 +68,7 @@ public class SDTool: NSObject {
         return nil
     }
     
+    @discardableResult
     public class func path(for resource: String, of type: String) -> String? {
         guard let path = Bundle.main.path(forResource: resource, ofType: type) else {
             return nil
@@ -72,6 +76,7 @@ public class SDTool: NSObject {
         return path
     }
     
+    @discardableResult
     public class func fileData(for resource: String, of type: String) -> Data? {
         guard let path = SDTool.path(for: resource, of: type) else {
             return nil
