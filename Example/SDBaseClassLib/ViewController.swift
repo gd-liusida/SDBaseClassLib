@@ -77,6 +77,8 @@ class ViewController: UIViewController {
         view.addSubview(label)
         
         label.frame = CGRect.init(x: 20, y: activeLabel.sd_bottom + 50, width: view.sd_width, height: 50)
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

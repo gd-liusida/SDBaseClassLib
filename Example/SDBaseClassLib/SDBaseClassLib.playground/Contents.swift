@@ -9,3 +9,5 @@ print(str1.toInt)
 var str2 = "1234567890"
 SDTool.log(str2[of: 9])
 
+
+

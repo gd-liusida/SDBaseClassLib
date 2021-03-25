@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UITextField {
+public extension UITextField {
     
     @discardableResult
     func setText(_ text: String?) -> Self {
@@ -26,5 +26,26 @@ extension UITextField {
         self.font = font
         return self
     }
+    
+    @discardableResult
+    func setPlaceholder(_ placeholder: String?) -> Self {
+        self.placeholder = placeholder
+        return self
+    }
+    
+    @discardableResult
+    func setLeftView(_ leftView: UIView) -> Self {
+        self.leftView = leftView
+        self.leftViewMode = .always
+        return self
+    }
+    
+    @discardableResult
+    func setRightView(_ rightView: UIView) -> Self {
+        self.rightView = rightView
+        self.rightViewMode = .always
+        return self
+    }
+    
     
 }
