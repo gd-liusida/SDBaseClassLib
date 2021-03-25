@@ -130,3 +130,45 @@ public extension String {
     }
     
 }
+
+public extension String {
+    func autoStringWidth(_ font: UIFont, height: CGFloat = 50) -> CGFloat {
+        let att = [
+            NSAttributedString.Key.font: font
+        ]
+        let str: NSString = self as NSString
+        let size = str.boundingRect(with: CGSize.init(width: CGFloat(MAXFLOAT), height: height),
+                                    options: NSStringDrawingOptions.usesLineFragmentOrigin,
+                                    attributes: att,
+                                    context: nil).size
+        return ceil(size.width) + 1
+    }
+    
+    func autoStringHeight(_ font: UIFont, width: CGFloat = UIScreen.main.bounds.width) -> CGFloat {
+        let att = [
+            NSAttributedString.Key.font: font,
+        ]
+        let str: NSString = self as NSString
+        let size = str.boundingRect(with: CGSize.init(width: width, height: CGFloat(MAXFLOAT)),
+                                    options: NSStringDrawingOptions.usesLineFragmentOrigin,
+                                    attributes: att,
+                                    context: nil).size
+        return ceil(size.height) + 1
+    }
+    
+    func autoAttStringHeight(_ font: UIFont, width: CGFloat = UIScreen.main.bounds.width) -> CGFloat {
+        let paragraph = NSMutableParagraphStyle()
+        paragraph.lineSpacing = 3
+        let att = [
+            NSAttributedString.Key.font: font,
+            NSAttributedString.Key.paragraphStyle: paragraph
+        ]
+        let str: NSString = self as NSString
+        let size = str.boundingRect(with: CGSize.init(width: width,
+                                                      height: CGFloat(MAXFLOAT)),
+                                    options: NSStringDrawingOptions.usesLineFragmentOrigin,
+                                    attributes: att,
+                                    context: nil).size
+        return ceil(size.height) + 1
+    }
+}
