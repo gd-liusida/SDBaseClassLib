@@ -16,6 +16,16 @@ public extension UIColor {
         
     }
     
+    
+    convenience init(_ r: Float, _ g: Float, _ b: Float, _ a: Float) {
+        self.init(
+            red: CGFloat(r / 255.0),
+            green: CGFloat(g / 255.0),
+            blue: CGFloat(b / 255.0),
+            alpha: CGFloat(a)
+        )
+    }
+    
     /// 通过16进制获取对应颜色 参数格式：0xFFFFFF
     /// - Parameter netHex: 0xFFFFFF
     convenience init(netHex: UInt) {

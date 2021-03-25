@@ -46,7 +46,7 @@ public extension UIButton {
         }
     }
     
-    /// 添加点击事件
+    /// 添加点击事件 防止连续点击
     func addAction(_ delay: TimeInterval = 0, action: @escaping ActionBlock) {
         addTarget(self, action: #selector(btnDelayClick(_:)) , for: .touchUpInside)
         actionDelay = delay
