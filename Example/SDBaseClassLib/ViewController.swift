@@ -68,6 +68,15 @@ class ViewController: UIViewController {
 
         activeLabel.frame = CGRect(x: 20, y: 40, width: view.frame.width - 40, height: 300)
         view.addSubview(activeLabel)
+        
+        let label = UILabel.init()
+        label.setText("字体大小")
+            .setFont(UIFont.systemFont(ofSize: 15))
+            .setFontSizeToFitWidth(0.6)
+            .setTextColor(UIColor.black)
+        view.addSubview(label)
+        
+        label.frame = CGRect.init(x: 20, y: activeLabel.sd_bottom + 50, width: view.sd_width, height: 50)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

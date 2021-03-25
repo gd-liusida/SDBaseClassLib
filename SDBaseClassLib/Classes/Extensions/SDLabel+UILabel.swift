@@ -40,6 +40,16 @@ public extension UILabel {
         return self
     }
     
+    /// 字体大小自适应宽度
+    /// - Parameter minScale: <#minScale description#>
+    /// - Returns: <#description#>
+    @discardableResult
+    func setFontSizeToFitWidth(_ minScale: CGFloat = 0.6) -> Self {
+        self.adjustsFontSizeToFitWidth = true
+        self.minimumScaleFactor = minScale
+        return self
+    }
+    
     ///添加下划线
     @discardableResult
     func underline() -> Self  {
