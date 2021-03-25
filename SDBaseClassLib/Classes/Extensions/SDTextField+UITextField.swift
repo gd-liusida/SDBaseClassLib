@@ -9,6 +9,21 @@ import UIKit
 
 public extension UITextField {
     
+    private struct PlaceholderColorKey {
+        static var identifier: String = "PlaceholderColorKey"
+    }
+    
+    var placeholderColor: UIColor? {
+        get {
+            return objc_getAssociatedObject(self, PlaceholderColorKey.identifier) as? UIColor
+        }
+        set {
+            objc_setAssociatedObject(self, PlaceholderColorKey.identifier, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+            let attStr = NSMutableAttributedString(string: self.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor: newValue ?? UIColor.gray, NSAttributedString.Key.font: self.font ?? UIFont.systemFont(ofSize: 14)])
+            self.attributedPlaceholder = attStr
+        }
+    }
+    
     @discardableResult
     func setText(_ text: String?) -> Self {
         self.text = text
@@ -30,6 +45,12 @@ public extension UITextField {
     @discardableResult
     func setPlaceholder(_ placeholder: String?) -> Self {
         self.placeholder = placeholder
+        return self
+    }
+    
+    @discardableResult
+    func setPlaceholderColor(_ color: UIColor) -> Self {
+        self.setValue(color, forKeyPath: "placeholderLabel.textColor")
         return self
     }
     
