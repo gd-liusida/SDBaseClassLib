@@ -17,4 +17,9 @@ public extension UITableView {
         showsVerticalScrollIndicator = false
     }
     
+    func setAutomaticDimension(_ estimatedRowHeight: CGFloat = 40) {
+        self.rowHeight = UITableView.automaticDimension
+        self.estimatedRowHeight = estimatedRowHeight
+    }
+    
 }
