@@ -68,5 +68,23 @@ public extension UITextField {
         return self
     }
     
+    @discardableResult
+    func setTextLeftAlignment() -> Self {
+        self.textAlignment = .left
+        return self
+    }
+    
+    @discardableResult
+    func setTextCenterAlignment() -> Self {
+        self.textAlignment = .center
+        return self
+    }
+    
+    @discardableResult
+    func setTextRightAlignment() -> Self {
+        self.textAlignment = .right
+        return self
+    }
+    
     
 }
