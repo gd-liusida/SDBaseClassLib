@@ -86,6 +86,14 @@ public class SDTool: NSObject {
         }
         return data as Data
     }
+    
+    @discardableResult
+    public class func getUUIDString() -> String {
+        guard let identifier = UIDevice.current.identifierForVendor else {
+            return ""
+        }
+        return identifier.uuidString
+    }
 
     
 }
