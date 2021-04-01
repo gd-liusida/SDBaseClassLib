@@ -94,6 +94,58 @@ public class SDTool: NSObject {
         }
         return identifier.uuidString
     }
+    
+    public class func save<T: Codable>(_ model: T, name: String) {
+        let path = getSavePath(name)
+        do {
+            SDTool.clear(name)
+            let userInfoSetData = try PropertyListEncoder().encode(model)
+            if #available(iOS 11.0, *) {
+                let archivedData = try NSKeyedArchiver.archivedData(withRootObject: userInfoSetData, requiringSecureCoding: true)
+                try archivedData.write(to: URL(fileURLWithPath: path))
+            } else {
+                NSKeyedArchiver.archiveRootObject(userInfoSetData, toFile: path)
+            }
+        } catch {
+            SDTool.log(error.localizedDescription)
+        }
+    }
+    
+    @discardableResult
+    public class func read<T: Codable>(_ name: String) -> T? {
+        do {
+            let data = try Data(contentsOf: URL(fileURLWithPath: getSavePath(name)))
+            let archivedData: Data? = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? Data
+            guard let _archivedData = archivedData else {
+                return nil
+            }
+            let decoder = PropertyListDecoder()
+            let model = try decoder.decode(T.self, from: _archivedData)
+            return model
+        } catch {
+            SDTool.log(error.localizedDescription)
+        }
+        return nil
+    }
+    
+    public class func clear(_ name: String) {
+        let savePath = getSavePath(name)
+        if FileManager.default.fileExists(atPath: savePath) {
+            do {
+                try FileManager.default.removeItem(atPath: savePath)
+                SDTool.log("delete file success: \(savePath)")
+            } catch {
+                SDTool.log("delete file failure: \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    @discardableResult
+    public class func getSavePath(_ name: String) -> String {
+        let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last!
+        let savePath = documentDirectory.appending(name)
+        return savePath
+    }
 
     
 }
