@@ -8,32 +8,32 @@
 
 import UIKit
 
-public typealias ActionBlock = ((UIButton)->Void)
+public typealias SDActionBlock = ((UIButton)->Void)
 
 /// 防止按钮重复点击
 public extension UIButton {
     
-    private struct AssociatedKeys {
+    private struct SDAssociatedKeys {
         static var ActionBlock = "ActionBlock"
         static var ActionDelay = "ActionDelay"
     }
     
     /// 运行时关联
-    private var actionBlock: ActionBlock? {
+    private var actionBlock: SDActionBlock? {
         set {
-            objc_setAssociatedObject(self, &AssociatedKeys.ActionBlock, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+            objc_setAssociatedObject(self, &SDAssociatedKeys.ActionBlock, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
         get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.ActionBlock) as? ActionBlock
+            return objc_getAssociatedObject(self, &SDAssociatedKeys.ActionBlock) as? SDActionBlock
         }
     }
     
     private var actionDelay: TimeInterval {
         set {
-            objc_setAssociatedObject(self, &AssociatedKeys.ActionDelay, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+            objc_setAssociatedObject(self, &SDAssociatedKeys.ActionDelay, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
         get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.ActionDelay) as? TimeInterval ?? 0
+            return objc_getAssociatedObject(self, &SDAssociatedKeys.ActionDelay) as? TimeInterval ?? 0
         }
     }
     
@@ -47,7 +47,7 @@ public extension UIButton {
     }
     
     /// 添加点击事件 防止连续点击
-    func addAction(_ delay: TimeInterval = 0, action: @escaping ActionBlock) {
+    func addAction(_ delay: TimeInterval = 0, action: @escaping SDActionBlock) {
         addTarget(self, action: #selector(btnDelayClick(_:)) , for: .touchUpInside)
         actionDelay = delay
         actionBlock = action

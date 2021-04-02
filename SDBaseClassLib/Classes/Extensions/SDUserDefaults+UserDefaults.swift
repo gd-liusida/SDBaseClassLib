@@ -12,6 +12,8 @@ import Foundation
 public enum SDUserDefaultKey: String {
     /// 是否登录
     case isLogin           = "isLogin"
+    /// 登录token
+    case token             = "token"
     /// 唯一标识
     case deviceToken       = "deviceToken"
 }

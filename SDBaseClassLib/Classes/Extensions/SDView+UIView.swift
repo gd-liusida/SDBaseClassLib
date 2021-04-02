@@ -9,7 +9,32 @@
 import Foundation
 import UIKit
 
+public typealias SDTapActionBlock = ((UIView) -> Void)
+
 public extension UIView {
+    
+    private struct SDAssociatedKeys {
+        static var ActionBlock = "ActionBlock"
+        static var ActionDelay = "ActionDelay"
+    }
+    
+    private var actionBlock: SDTapActionBlock? {
+        set {
+            objc_setAssociatedObject(self, &SDAssociatedKeys.ActionBlock, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+        }
+        get {
+            return objc_getAssociatedObject(self, &SDAssociatedKeys.ActionBlock) as? SDTapActionBlock
+        }
+    }
+    
+    private var actionDelay: TimeInterval {
+        set {
+            objc_setAssociatedObject(self, &SDAssociatedKeys.ActionDelay, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+        }
+        get {
+            return objc_getAssociatedObject(self, &SDAssociatedKeys.ActionDelay) as? TimeInterval ?? 0
+        }
+    }
     
     func addSubViews(_ views: [UIView]) {
         views.forEach { (item) in
@@ -40,5 +65,16 @@ public extension UIView {
     func setBackgroundColor(_ color: UIColor?) -> Self {
         backgroundColor = color
         return self
+    }
+    
+    func addAction(_ delay: TimeInterval = 0, action: @escaping SDTapActionBlock) {
+        isUserInteractionEnabled = true
+        addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.tapDelayClick)))
+        actionDelay = delay
+        actionBlock = action
+    }
+    
+    @objc func tapDelayClick() {
+        actionBlock?(self)
     }
 }
