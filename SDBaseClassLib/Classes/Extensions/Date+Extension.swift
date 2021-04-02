@@ -402,7 +402,7 @@ public extension SDPOP where Base == Date {
     /// 获取当前月的天数
     /// - Returns: 返回天数
     static func currentMonthDays() -> Int {
-        return daysCount(year: Date.jk.currentDate.jk.year, month: Date.jk.currentDate.jk.month)
+        return daysCount(year: Date.sd.currentDate.sd.year, month: Date.sd.currentDate.sd.month)
     }
 }
 
