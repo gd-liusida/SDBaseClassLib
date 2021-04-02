@@ -52,8 +52,23 @@
 		D4214D4855462814DF116453A6F0C392 /* SDData+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873EE33526D4B056E2F94C60C0EEDCAF /* SDData+Data.swift */; };
 		D4F0E042337BCF207266FBB404D91E08 /* SDView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C85A0E31D7AEBDF45C16E90BE53E8E /* SDView+Layout.swift */; };
 		D53A225A2616C0580099B84E /* SDFileManager+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53A22592616C0580099B84E /* SDFileManager+FileManager.swift */; };
+		D5E4AF5C26177D150006FE87 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AF5B26177D150006FE87 /* Date+Extension.swift */; };
+		D5E4AF6426177DC70006FE87 /* SDPOP.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AF6326177DC70006FE87 /* SDPOP.swift */; };
+		D5E4AF6E26177FF00006FE87 /* SDEmitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AF6D26177FF00006FE87 /* SDEmitterable.swift */; };
+		D5E4AF74261780C10006FE87 /* SDNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AF73261780C10006FE87 /* SDNibLoadable.swift */; };
+		D5E4AF7A261781340006FE87 /* SDJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AF79261781340006FE87 /* SDJSON.swift */; };
+		D5E4AF81261781CE0006FE87 /* SDPOP+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AF80261781CE0006FE87 /* SDPOP+String.swift */; };
+		D5E4AF8B2617836C0006FE87 /* SDEKEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AF8A2617836C0006FE87 /* SDEKEvent.swift */; };
+		D5E4AF91261784110006FE87 /* SDContactsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AF90261784110006FE87 /* SDContactsKit.swift */; };
+		D5E4AF97261784910006FE87 /* SDPhotoAlbumUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AF96261784910006FE87 /* SDPhotoAlbumUtil.swift */; };
+		D5E4AF9D2617851A0006FE87 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AF9C2617851A0006FE87 /* Bundle+Extension.swift */; };
+		D5E4AFA7261785AB0006FE87 /* SDAsyncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AFA6261785AB0006FE87 /* SDAsyncs.swift */; };
+		D5E4AFAD261786A20006FE87 /* SDClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AFAC261786A20006FE87 /* SDClosure.swift */; };
+		D5E4AFB3261786E40006FE87 /* SDCommonTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AFB2261786E40006FE87 /* SDCommonTool.swift */; };
+		D5E4AFB92617871E0006FE87 /* SDContentSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AFB82617871E0006FE87 /* SDContentSize.swift */; };
+		D5E4AFBF2617879F0006FE87 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AFBE2617879F0006FE87 /* UIView+Extension.swift */; };
+		D5E4AFC5261789750006FE87 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AFC4261789750006FE87 /* UIColor+Extension.swift */; };
 		DE3F9F350238106B8FF1DC5276FB3C2A /* SDActiveBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73922A5CB2AA7342234F8197AFA4888B /* SDActiveBuilder.swift */; };
-		E032F4D34AA741A138E58D5E8C556A8A /* SDNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE3CA99377E77504962352EF8870B42 /* SDNibLoadable.swift */; };
 		E07FA9492FDB04007BB586F8AA9905CC /* SDConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74947C7F992962F445E930F7D18CEB /* SDConstans.swift */; };
 		E7751F761111FD88DDC8B8D58E8F40A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
@@ -104,7 +119,6 @@
 		275EBCB008F0FDBDCAC202D15CBF3391 /* Pods-SDBaseClassLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDBaseClassLib_Example.release.xcconfig"; sourceTree = "<group>"; };
 		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
-		2BE3CA99377E77504962352EF8870B42 /* SDNibLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SDNibLoadable.swift; sourceTree = "<group>"; };
 		30EAA9E1850694B5D790DD3F629861B1 /* SDButton+UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SDButton+UIButton.swift"; sourceTree = "<group>"; };
 		31EEE9391C6AEA2309E3DFFDAEF0E8D1 /* SDViewController+UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SDViewController+UIViewController.swift"; sourceTree = "<group>"; };
 		3258F5CAFF1FDD0E122B04F1BCAADF0F /* Pods-SDBaseClassLib_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDBaseClassLib_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -160,6 +174,22 @@
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		D53A22592616C0580099B84E /* SDFileManager+FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SDFileManager+FileManager.swift"; sourceTree = "<group>"; };
+		D5E4AF5B26177D150006FE87 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		D5E4AF6326177DC70006FE87 /* SDPOP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDPOP.swift; sourceTree = "<group>"; };
+		D5E4AF6D26177FF00006FE87 /* SDEmitterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDEmitterable.swift; sourceTree = "<group>"; };
+		D5E4AF73261780C10006FE87 /* SDNibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDNibLoadable.swift; sourceTree = "<group>"; };
+		D5E4AF79261781340006FE87 /* SDJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDJSON.swift; sourceTree = "<group>"; };
+		D5E4AF80261781CE0006FE87 /* SDPOP+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SDPOP+String.swift"; sourceTree = "<group>"; };
+		D5E4AF8A2617836C0006FE87 /* SDEKEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDEKEvent.swift; sourceTree = "<group>"; };
+		D5E4AF90261784110006FE87 /* SDContactsKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDContactsKit.swift; sourceTree = "<group>"; };
+		D5E4AF96261784910006FE87 /* SDPhotoAlbumUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDPhotoAlbumUtil.swift; sourceTree = "<group>"; };
+		D5E4AF9C2617851A0006FE87 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		D5E4AFA6261785AB0006FE87 /* SDAsyncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDAsyncs.swift; sourceTree = "<group>"; };
+		D5E4AFAC261786A20006FE87 /* SDClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDClosure.swift; sourceTree = "<group>"; };
+		D5E4AFB2261786E40006FE87 /* SDCommonTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDCommonTool.swift; sourceTree = "<group>"; };
+		D5E4AFB82617871E0006FE87 /* SDContentSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDContentSize.swift; sourceTree = "<group>"; };
+		D5E4AFBE2617879F0006FE87 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D5E4AFC4261789750006FE87 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		DA019D5B49BAEF40DEC8EC74B7FE75A4 /* Pods-SDBaseClassLib_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SDBaseClassLib_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DB74947C7F992962F445E930F7D18CEB /* SDConstans.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SDConstans.swift; path = SDBaseClassLib/Classes/SDConstans.swift; sourceTree = "<group>"; };
@@ -252,7 +282,6 @@
 			isa = PBXGroup;
 			children = (
 				B82914E54A7159D950439871183E0E65 /* SDCollectionView+SDReusable.swift */,
-				2BE3CA99377E77504962352EF8870B42 /* SDNibLoadable.swift */,
 				E049193358E1F85D1EC74759860E6C38 /* SDReusable.swift */,
 				56D83292E03AE0993AD4A1B728974E34 /* SDTableView+SDReusable.swift */,
 			);
@@ -317,6 +346,10 @@
 				878CA309CAC6EA4FE7BED4788E13DC5E /* SDView+UIView.swift */,
 				31EEE9391C6AEA2309E3DFFDAEF0E8D1 /* SDViewController+UIViewController.swift */,
 				D53A22592616C0580099B84E /* SDFileManager+FileManager.swift */,
+				D5E4AF5B26177D150006FE87 /* Date+Extension.swift */,
+				D5E4AF9C2617851A0006FE87 /* Bundle+Extension.swift */,
+				D5E4AFBE2617879F0006FE87 /* UIView+Extension.swift */,
+				D5E4AFC4261789750006FE87 /* UIColor+Extension.swift */,
 			);
 			name = Extensions;
 			path = SDBaseClassLib/Classes/Extensions;
@@ -392,6 +425,42 @@
 			);
 			sourceTree = "<group>";
 		};
+		D5E4AF6126177D7B0006FE87 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D5E4AF8A2617836C0006FE87 /* SDEKEvent.swift */,
+				D5E4AF90261784110006FE87 /* SDContactsKit.swift */,
+				D5E4AF96261784910006FE87 /* SDPhotoAlbumUtil.swift */,
+				D5E4AFA6261785AB0006FE87 /* SDAsyncs.swift */,
+				D5E4AFAC261786A20006FE87 /* SDClosure.swift */,
+				D5E4AFB2261786E40006FE87 /* SDCommonTool.swift */,
+				D5E4AFB82617871E0006FE87 /* SDContentSize.swift */,
+			);
+			name = Tools;
+			path = SDBaseClassLib/Classes/Tools;
+			sourceTree = "<group>";
+		};
+		D5E4AF6226177DAB0006FE87 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D5E4AF73261780C10006FE87 /* SDNibLoadable.swift */,
+				D5E4AF6326177DC70006FE87 /* SDPOP.swift */,
+				D5E4AF6D26177FF00006FE87 /* SDEmitterable.swift */,
+				D5E4AF79261781340006FE87 /* SDJSON.swift */,
+				D5E4AF7F261781B00006FE87 /* SDPOPExtension */,
+			);
+			name = Protocol;
+			path = SDBaseClassLib/Classes/Protocol;
+			sourceTree = "<group>";
+		};
+		D5E4AF7F261781B00006FE87 /* SDPOPExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D5E4AF80261781CE0006FE87 /* SDPOP+String.swift */,
+			);
+			path = SDPOPExtension;
+			sourceTree = "<group>";
+		};
 		DA5C7749AF4F28DE1C2B01C369B6BDA9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,6 +479,8 @@
 		E6D73B54B1C8A24B5DF985E584C3E1D6 /* SDBaseClassLib */ = {
 			isa = PBXGroup;
 			children = (
+				D5E4AF6226177DAB0006FE87 /* Protocol */,
+				D5E4AF6126177D7B0006FE87 /* Tools */,
 				6A941897E9EF6E25B11DB4B0BC2D5426 /* ReplaceMe.swift */,
 				73922A5CB2AA7342234F8197AFA4888B /* SDActiveBuilder.swift */,
 				E3F966F05492D2B8F9C6F87CA06B0C77 /* SDActiveLabel.swift */,
@@ -633,6 +704,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E4AF7A261781340006FE87 /* SDJSON.swift in Sources */,
+				D5E4AF9D2617851A0006FE87 /* Bundle+Extension.swift in Sources */,
 				94CD70AEFF92C0BAC2343666A918B0A3 /* ReplaceMe.swift in Sources */,
 				DE3F9F350238106B8FF1DC5276FB3C2A /* SDActiveBuilder.swift in Sources */,
 				D53A225A2616C0580099B84E /* SDFileManager+FileManager.swift in Sources */,
@@ -640,18 +713,30 @@
 				ADA80935C20B6846F5B55990F8B78F17 /* SDActiveType.swift in Sources */,
 				4F67608C78720FFA3FA1CCAA215FF1A0 /* SDBaseClassLib-dummy.m in Sources */,
 				992B54EDF3C42756DABA754AAA88AF1C /* SDButton+UIButton.swift in Sources */,
+				D5E4AF97261784910006FE87 /* SDPhotoAlbumUtil.swift in Sources */,
+				D5E4AF81261781CE0006FE87 /* SDPOP+String.swift in Sources */,
 				907205D2DD593CCA9900C303D0A6DECF /* SDCollectionView+SDReusable.swift in Sources */,
 				A4550FAD622F41BB00B3A609169BEBD0 /* SDColor+UIColor.swift in Sources */,
+				D5E4AFC5261789750006FE87 /* UIColor+Extension.swift in Sources */,
+				D5E4AF5C26177D150006FE87 /* Date+Extension.swift in Sources */,
+				D5E4AFB3261786E40006FE87 /* SDCommonTool.swift in Sources */,
+				D5E4AF74261780C10006FE87 /* SDNibLoadable.swift in Sources */,
 				E07FA9492FDB04007BB586F8AA9905CC /* SDConstans.swift in Sources */,
 				C987F37800DC7AB251187072061BA78D /* SDCountdownButton.swift in Sources */,
 				D4214D4855462814DF116453A6F0C392 /* SDData+Data.swift in Sources */,
 				2E83AC4166C94C16D93E8463B6030346 /* SDLabel+UILabel.swift in Sources */,
-				E032F4D34AA741A138E58D5E8C556A8A /* SDNibLoadable.swift in Sources */,
+				D5E4AFBF2617879F0006FE87 /* UIView+Extension.swift in Sources */,
+				D5E4AFB92617871E0006FE87 /* SDContentSize.swift in Sources */,
+				D5E4AF6426177DC70006FE87 /* SDPOP.swift in Sources */,
 				135F7FA21BABAACCEF9436D89EE61DCF /* SDReusable.swift in Sources */,
 				C98F321DC9E6CE736DAF21AFB12AA71F /* SDString+String.swift in Sources */,
+				D5E4AF8B2617836C0006FE87 /* SDEKEvent.swift in Sources */,
+				D5E4AFAD261786A20006FE87 /* SDClosure.swift in Sources */,
+				D5E4AF91261784110006FE87 /* SDContactsKit.swift in Sources */,
 				F2AE4FD6C1362EC5B5BDC8A62A5F8555 /* SDTableView+SDReusable.swift in Sources */,
 				AAB4749D4B143C8361235F03AF2E19E2 /* SDTableView+UITableView.swift in Sources */,
 				4CF04175E27038BA9798D80365FB6C2E /* SDTextField+UITextField.swift in Sources */,
+				D5E4AF6E26177FF00006FE87 /* SDEmitterable.swift in Sources */,
 				A0501E4735CA41EDED6EFAF32B75AF5F /* SDTimerTool.swift in Sources */,
 				78AAD2AB3F9D122FA74794868FAF2D88 /* SDTool.swift in Sources */,
 				D0C86E88A229B3AD3184D1DFB3F741C8 /* SDUserDefaults+UserDefaults.swift in Sources */,
@@ -659,6 +744,7 @@
 				D4F0E042337BCF207266FBB404D91E08 /* SDView+Layout.swift in Sources */,
 				C145E6D0D151596C3045EF1B4D4C5A42 /* SDView+UIView.swift in Sources */,
 				4AB185071640F1FE634E9DD8CE362F9C /* SDViewController+UIViewController.swift in Sources */,
+				D5E4AFA7261785AB0006FE87 /* SDAsyncs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
