@@ -38,7 +38,7 @@ public struct SDContentSize {
         tempLabel.attributedText = attributedString
         tempLabel.numberOfLines = 0
         tempLabel.sizeToFit()
-        let size: CGSize = tempLabel.jk.size
+        let size: CGSize = tempLabel.sd.size
         return size;
     }
 }

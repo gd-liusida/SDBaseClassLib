@@ -51,7 +51,6 @@
 		D0C86E88A229B3AD3184D1DFB3F741C8 /* SDUserDefaults+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D087385E344C2443AF55B66883583E /* SDUserDefaults+UserDefaults.swift */; };
 		D4214D4855462814DF116453A6F0C392 /* SDData+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873EE33526D4B056E2F94C60C0EEDCAF /* SDData+Data.swift */; };
 		D4F0E042337BCF207266FBB404D91E08 /* SDView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C85A0E31D7AEBDF45C16E90BE53E8E /* SDView+Layout.swift */; };
-		D53A225A2616C0580099B84E /* SDFileManager+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53A22592616C0580099B84E /* SDFileManager+FileManager.swift */; };
 		D5E4AF5C26177D150006FE87 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AF5B26177D150006FE87 /* Date+Extension.swift */; };
 		D5E4AF6426177DC70006FE87 /* SDPOP.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AF6326177DC70006FE87 /* SDPOP.swift */; };
 		D5E4AF6E26177FF00006FE87 /* SDEmitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AF6D26177FF00006FE87 /* SDEmitterable.swift */; };
@@ -68,6 +67,24 @@
 		D5E4AFB92617871E0006FE87 /* SDContentSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AFB82617871E0006FE87 /* SDContentSize.swift */; };
 		D5E4AFBF2617879F0006FE87 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AFBE2617879F0006FE87 /* UIView+Extension.swift */; };
 		D5E4AFC5261789750006FE87 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4AFC4261789750006FE87 /* UIColor+Extension.swift */; };
+		D5E4B03726178C2A0006FE87 /* SDGlobalTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B03626178C2A0006FE87 /* SDGlobalTools.swift */; };
+		D5E4B03D26178CE40006FE87 /* SDPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B03C26178CE40006FE87 /* SDPrint.swift */; };
+		D5E4B04326178D630006FE87 /* SDRegexHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B04226178D630006FE87 /* SDRegexHelper.swift */; };
+		D5E4B04926178E9D0006FE87 /* SDRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B04826178E9D0006FE87 /* SDRuntime.swift */; };
+		D5E4B04F26178FC00006FE87 /* SDTapActionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B04E26178FC00006FE87 /* SDTapActionLabel.swift */; };
+		D5E4B055261790460006FE87 /* SDWaterFallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B054261790460006FE87 /* SDWaterFallLayout.swift */; };
+		D5E4B05B261790EA0006FE87 /* SDKeyboardAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B05A261790EA0006FE87 /* SDKeyboardAccessory.swift */; };
+		D5E4B061261791390006FE87 /* SDQRCodeImageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B060261791390006FE87 /* SDQRCodeImageFactory.swift */; };
+		D5E4B067261791930006FE87 /* SDWeakTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B066261791930006FE87 /* SDWeakTimer.swift */; };
+		D5E4B06D261791ED0006FE87 /* SDDrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B06C261791ED0006FE87 /* SDDrawSignatureView.swift */; };
+		D5E4B0732617921D0006FE87 /* SDPaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B0722617921D0006FE87 /* SDPaddingLabel.swift */; };
+		D5E4B079261792FF0006FE87 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B078261792FF0006FE87 /* String+Extension.swift */; };
+		D5E4B07F261794AE0006FE87 /* NumberFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B07E261794AE0006FE87 /* NumberFormatter+Extension.swift */; };
+		D5E4B085261794F40006FE87 /* CLLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B084261794F40006FE87 /* CLLocation+Extension.swift */; };
+		D5E4B08B2617952E0006FE87 /* NSRange+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B08A2617952E0006FE87 /* NSRange+Extension.swift */; };
+		D5E4B091261795600006FE87 /* Range+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B090261795600006FE87 /* Range+Extension.swift */; };
+		D5E4B0972617958C0006FE87 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B0962617958C0006FE87 /* FileManager+Extension.swift */; };
+		D5E4B0A1261796440006FE87 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B0A0261796440006FE87 /* Array+Extension.swift */; };
 		DE3F9F350238106B8FF1DC5276FB3C2A /* SDActiveBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73922A5CB2AA7342234F8197AFA4888B /* SDActiveBuilder.swift */; };
 		E07FA9492FDB04007BB586F8AA9905CC /* SDConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB74947C7F992962F445E930F7D18CEB /* SDConstans.swift */; };
 		E7751F761111FD88DDC8B8D58E8F40A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
@@ -173,7 +190,6 @@
 		CA080289213E64C2EEC4BFC119283E57 /* SDBaseClassLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SDBaseClassLib-Info.plist"; sourceTree = "<group>"; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		D53A22592616C0580099B84E /* SDFileManager+FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SDFileManager+FileManager.swift"; sourceTree = "<group>"; };
 		D5E4AF5B26177D150006FE87 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		D5E4AF6326177DC70006FE87 /* SDPOP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDPOP.swift; sourceTree = "<group>"; };
 		D5E4AF6D26177FF00006FE87 /* SDEmitterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDEmitterable.swift; sourceTree = "<group>"; };
@@ -190,6 +206,24 @@
 		D5E4AFB82617871E0006FE87 /* SDContentSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDContentSize.swift; sourceTree = "<group>"; };
 		D5E4AFBE2617879F0006FE87 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		D5E4AFC4261789750006FE87 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D5E4B03626178C2A0006FE87 /* SDGlobalTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDGlobalTools.swift; sourceTree = "<group>"; };
+		D5E4B03C26178CE40006FE87 /* SDPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDPrint.swift; sourceTree = "<group>"; };
+		D5E4B04226178D630006FE87 /* SDRegexHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDRegexHelper.swift; sourceTree = "<group>"; };
+		D5E4B04826178E9D0006FE87 /* SDRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDRuntime.swift; sourceTree = "<group>"; };
+		D5E4B04E26178FC00006FE87 /* SDTapActionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDTapActionLabel.swift; sourceTree = "<group>"; };
+		D5E4B054261790460006FE87 /* SDWaterFallLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDWaterFallLayout.swift; sourceTree = "<group>"; };
+		D5E4B05A261790EA0006FE87 /* SDKeyboardAccessory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKeyboardAccessory.swift; sourceTree = "<group>"; };
+		D5E4B060261791390006FE87 /* SDQRCodeImageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDQRCodeImageFactory.swift; sourceTree = "<group>"; };
+		D5E4B066261791930006FE87 /* SDWeakTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDWeakTimer.swift; sourceTree = "<group>"; };
+		D5E4B06C261791ED0006FE87 /* SDDrawSignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDDrawSignatureView.swift; sourceTree = "<group>"; };
+		D5E4B0722617921D0006FE87 /* SDPaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDPaddingLabel.swift; sourceTree = "<group>"; };
+		D5E4B078261792FF0006FE87 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		D5E4B07E261794AE0006FE87 /* NumberFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extension.swift"; sourceTree = "<group>"; };
+		D5E4B084261794F40006FE87 /* CLLocation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extension.swift"; sourceTree = "<group>"; };
+		D5E4B08A2617952E0006FE87 /* NSRange+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRange+Extension.swift"; sourceTree = "<group>"; };
+		D5E4B090261795600006FE87 /* Range+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Range+Extension.swift"; sourceTree = "<group>"; };
+		D5E4B0962617958C0006FE87 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		D5E4B0A0261796440006FE87 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		DA019D5B49BAEF40DEC8EC74B7FE75A4 /* Pods-SDBaseClassLib_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SDBaseClassLib_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DB74947C7F992962F445E930F7D18CEB /* SDConstans.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SDConstans.swift; path = SDBaseClassLib/Classes/SDConstans.swift; sourceTree = "<group>"; };
@@ -345,11 +379,17 @@
 				87C85A0E31D7AEBDF45C16E90BE53E8E /* SDView+Layout.swift */,
 				878CA309CAC6EA4FE7BED4788E13DC5E /* SDView+UIView.swift */,
 				31EEE9391C6AEA2309E3DFFDAEF0E8D1 /* SDViewController+UIViewController.swift */,
-				D53A22592616C0580099B84E /* SDFileManager+FileManager.swift */,
 				D5E4AF5B26177D150006FE87 /* Date+Extension.swift */,
 				D5E4AF9C2617851A0006FE87 /* Bundle+Extension.swift */,
 				D5E4AFBE2617879F0006FE87 /* UIView+Extension.swift */,
 				D5E4AFC4261789750006FE87 /* UIColor+Extension.swift */,
+				D5E4B078261792FF0006FE87 /* String+Extension.swift */,
+				D5E4B07E261794AE0006FE87 /* NumberFormatter+Extension.swift */,
+				D5E4B084261794F40006FE87 /* CLLocation+Extension.swift */,
+				D5E4B08A2617952E0006FE87 /* NSRange+Extension.swift */,
+				D5E4B090261795600006FE87 /* Range+Extension.swift */,
+				D5E4B0962617958C0006FE87 /* FileManager+Extension.swift */,
+				D5E4B0A0261796440006FE87 /* Array+Extension.swift */,
 			);
 			name = Extensions;
 			path = SDBaseClassLib/Classes/Extensions;
@@ -435,6 +475,17 @@
 				D5E4AFAC261786A20006FE87 /* SDClosure.swift */,
 				D5E4AFB2261786E40006FE87 /* SDCommonTool.swift */,
 				D5E4AFB82617871E0006FE87 /* SDContentSize.swift */,
+				D5E4B03626178C2A0006FE87 /* SDGlobalTools.swift */,
+				D5E4B03C26178CE40006FE87 /* SDPrint.swift */,
+				D5E4B04226178D630006FE87 /* SDRegexHelper.swift */,
+				D5E4B04826178E9D0006FE87 /* SDRuntime.swift */,
+				D5E4B04E26178FC00006FE87 /* SDTapActionLabel.swift */,
+				D5E4B054261790460006FE87 /* SDWaterFallLayout.swift */,
+				D5E4B05A261790EA0006FE87 /* SDKeyboardAccessory.swift */,
+				D5E4B060261791390006FE87 /* SDQRCodeImageFactory.swift */,
+				D5E4B066261791930006FE87 /* SDWeakTimer.swift */,
+				D5E4B06C261791ED0006FE87 /* SDDrawSignatureView.swift */,
+				D5E4B0722617921D0006FE87 /* SDPaddingLabel.swift */,
 			);
 			name = Tools;
 			path = SDBaseClassLib/Classes/Tools;
@@ -704,11 +755,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E4B04926178E9D0006FE87 /* SDRuntime.swift in Sources */,
+				D5E4B0A1261796440006FE87 /* Array+Extension.swift in Sources */,
 				D5E4AF7A261781340006FE87 /* SDJSON.swift in Sources */,
 				D5E4AF9D2617851A0006FE87 /* Bundle+Extension.swift in Sources */,
 				94CD70AEFF92C0BAC2343666A918B0A3 /* ReplaceMe.swift in Sources */,
+				D5E4B03D26178CE40006FE87 /* SDPrint.swift in Sources */,
+				D5E4B04F26178FC00006FE87 /* SDTapActionLabel.swift in Sources */,
 				DE3F9F350238106B8FF1DC5276FB3C2A /* SDActiveBuilder.swift in Sources */,
-				D53A225A2616C0580099B84E /* SDFileManager+FileManager.swift in Sources */,
 				C5E689CAF6BA961C14092750C75505D7 /* SDActiveLabel.swift in Sources */,
 				ADA80935C20B6846F5B55990F8B78F17 /* SDActiveType.swift in Sources */,
 				4F67608C78720FFA3FA1CCAA215FF1A0 /* SDBaseClassLib-dummy.m in Sources */,
@@ -724,27 +778,41 @@
 				E07FA9492FDB04007BB586F8AA9905CC /* SDConstans.swift in Sources */,
 				C987F37800DC7AB251187072061BA78D /* SDCountdownButton.swift in Sources */,
 				D4214D4855462814DF116453A6F0C392 /* SDData+Data.swift in Sources */,
+				D5E4B079261792FF0006FE87 /* String+Extension.swift in Sources */,
+				D5E4B08B2617952E0006FE87 /* NSRange+Extension.swift in Sources */,
 				2E83AC4166C94C16D93E8463B6030346 /* SDLabel+UILabel.swift in Sources */,
+				D5E4B091261795600006FE87 /* Range+Extension.swift in Sources */,
+				D5E4B06D261791ED0006FE87 /* SDDrawSignatureView.swift in Sources */,
+				D5E4B05B261790EA0006FE87 /* SDKeyboardAccessory.swift in Sources */,
 				D5E4AFBF2617879F0006FE87 /* UIView+Extension.swift in Sources */,
 				D5E4AFB92617871E0006FE87 /* SDContentSize.swift in Sources */,
+				D5E4B04326178D630006FE87 /* SDRegexHelper.swift in Sources */,
 				D5E4AF6426177DC70006FE87 /* SDPOP.swift in Sources */,
 				135F7FA21BABAACCEF9436D89EE61DCF /* SDReusable.swift in Sources */,
 				C98F321DC9E6CE736DAF21AFB12AA71F /* SDString+String.swift in Sources */,
+				D5E4B061261791390006FE87 /* SDQRCodeImageFactory.swift in Sources */,
+				D5E4B067261791930006FE87 /* SDWeakTimer.swift in Sources */,
 				D5E4AF8B2617836C0006FE87 /* SDEKEvent.swift in Sources */,
 				D5E4AFAD261786A20006FE87 /* SDClosure.swift in Sources */,
 				D5E4AF91261784110006FE87 /* SDContactsKit.swift in Sources */,
+				D5E4B03726178C2A0006FE87 /* SDGlobalTools.swift in Sources */,
 				F2AE4FD6C1362EC5B5BDC8A62A5F8555 /* SDTableView+SDReusable.swift in Sources */,
 				AAB4749D4B143C8361235F03AF2E19E2 /* SDTableView+UITableView.swift in Sources */,
 				4CF04175E27038BA9798D80365FB6C2E /* SDTextField+UITextField.swift in Sources */,
 				D5E4AF6E26177FF00006FE87 /* SDEmitterable.swift in Sources */,
+				D5E4B0972617958C0006FE87 /* FileManager+Extension.swift in Sources */,
 				A0501E4735CA41EDED6EFAF32B75AF5F /* SDTimerTool.swift in Sources */,
 				78AAD2AB3F9D122FA74794868FAF2D88 /* SDTool.swift in Sources */,
 				D0C86E88A229B3AD3184D1DFB3F741C8 /* SDUserDefaults+UserDefaults.swift in Sources */,
+				D5E4B0732617921D0006FE87 /* SDPaddingLabel.swift in Sources */,
 				C7C1514F9BA109BE4E00D49DBC1558D0 /* SDValidateType.swift in Sources */,
 				D4F0E042337BCF207266FBB404D91E08 /* SDView+Layout.swift in Sources */,
+				D5E4B085261794F40006FE87 /* CLLocation+Extension.swift in Sources */,
+				D5E4B055261790460006FE87 /* SDWaterFallLayout.swift in Sources */,
 				C145E6D0D151596C3045EF1B4D4C5A42 /* SDView+UIView.swift in Sources */,
 				4AB185071640F1FE634E9DD8CE362F9C /* SDViewController+UIViewController.swift in Sources */,
 				D5E4AFA7261785AB0006FE87 /* SDAsyncs.swift in Sources */,
+				D5E4B07F261794AE0006FE87 /* NumberFormatter+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
