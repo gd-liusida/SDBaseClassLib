@@ -67,7 +67,7 @@ public extension UIView {
         return self
     }
     
-    func addAction(_ delay: TimeInterval = 0, action: @escaping SDTapActionBlock) {
+    func addGestureAction(_ delay: TimeInterval = 0, action: @escaping SDTapActionBlock) {
         isUserInteractionEnabled = true
         addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.tapDelayClick)))
         actionDelay = delay
