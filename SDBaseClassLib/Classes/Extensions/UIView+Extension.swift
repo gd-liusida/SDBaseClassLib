@@ -582,6 +582,7 @@ public extension UIView {
     // MARK: 6.3 设置边线
     /// - Parameter borderWidth: 边线宽度
     /// - Returns: 返回自身
+    @discardableResult
     func border(_ borderWidth: CGFloat) -> Self {
         layer.borderWidth(borderWidth)
         return self
@@ -590,12 +591,13 @@ public extension UIView {
     // MARK: 6.4 设置边线
     /// - Parameter borderColor: 边线宽度
     /// - Returns: 返回自身
+    @discardableResult
     func border(_ borderColor: UIColor) -> Self {
         layer.borderColor(borderColor)
         return self
     }
     
-    // MARK: 6.3、图片的模式
+    // MARK: 6.5、图片的模式
     /// 图片的模式
     /// - Parameter mode: 模式
     /// - Returns: 返回图片的模式
@@ -605,7 +607,7 @@ public extension UIView {
         return self
     }
     
-    // MARK: 6.4、设置背景色
+    // MARK: 6.6、设置背景色
     /// 设置背景色
     /// - Parameter color: 颜色
     /// - Returns: 返回自身
@@ -615,7 +617,7 @@ public extension UIView {
         return self
     }
     
-    // MARK: 6.5、设置十六进制颜色
+    // MARK: 6.7、设置十六进制颜色
     /// 设置十六进制颜色
     /// - Parameter hex: 十六进制颜色
     /// - Returns: 返回自身
@@ -625,7 +627,7 @@ public extension UIView {
         return self
     }
     
-    // MARK: 6.6、设置 frame
+    // MARK: 6.8、设置 frame
     /// 设置 frame
     /// - Parameter frame: frame
     /// - Returns: 返回自身
@@ -635,7 +637,7 @@ public extension UIView {
         return self
     }
     
-    // MARK: 6.7、被添加到某个视图上
+    // MARK: 6.9、被添加到某个视图上
     /// 被添加到某个视图上
     /// - Parameter superView: 父视图
     /// - Returns: 返回自身
@@ -645,7 +647,19 @@ public extension UIView {
         return self
     }
     
-    // MARK: 6.8、设置是否支持触摸
+    // MARK: 6.10、添加到视图组
+    /// 添加到视图组
+    /// - Parameter self: 父视图
+    /// - Returns: 返回自身
+    @discardableResult
+    func addSubviews(_ views: [UIView]) -> Self {
+        views.forEach { (view) in
+            addSubview(view)
+        }
+        return self
+    }
+    
+    // MARK: 6.11、设置是否支持触摸
     /// 设置是否支持触摸
     /// - Parameter isUserInteractionEnabled: 是否支持触摸
     /// - Returns: 返回自身
@@ -655,7 +669,7 @@ public extension UIView {
         return self
     }
     
-    // MARK: 6.9、设置是否隐藏
+    // MARK: 6.12、设置是否隐藏
     /// 设置是否隐藏
     /// - Parameter isHidden: 是否隐藏
     /// - Returns: 返回自身
@@ -665,7 +679,7 @@ public extension UIView {
         return self
     }
     
-    // MARK: 6.10、设置透明度
+    // MARK: 6.13、设置透明度
     /// 设置透明度
     /// - Parameter alpha: 透明度
     /// - Returns: 返回自身
@@ -675,7 +689,7 @@ public extension UIView {
         return self
     }
     
-    // MARK: 6.11、设置tintColor
+    // MARK: 6.14、设置tintColor
     /// 设置tintColor
     /// - Parameter tintColor: tintColor description
     /// - Returns: 返回自身
