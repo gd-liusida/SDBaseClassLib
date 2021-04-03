@@ -92,6 +92,21 @@ public extension SDPOP where Base: UIViewController {
             nav.dismiss(animated: true, completion: nil)
         }
     }
+    
+    // MARK: 1.7、push跳转到指定UIViewController
+    /// push跳转到指定UIViewController
+    func push(to viewController: UIViewController, animated: Bool = true) {
+        if self.base.navigationController?.viewControllers.count ?? 1 > 0 {
+            viewController.hidesBottomBarWhenPushed = true
+        }
+        self.base.navigationController?.pushViewController(viewController, animated: animated)
+    }
+    
+    // MARK: 1.8、present跳转到指定UIViewController
+    /// present跳转到指定UIViewController
+    func present(to viewController: UIViewController, animated: Bool = true, completion: (() -> Void)? = nil) {
+        self.base.present(viewController, animated: animated, completion: completion)
+    }
 }
 
 // MARK:- 二、Storyboard 的 VC 交互
