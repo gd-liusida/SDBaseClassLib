@@ -579,6 +579,22 @@ public extension UIView {
         return self
     }
     
+    // MARK: 6.3 设置边线
+    /// - Parameter borderWidth: 边线宽度
+    /// - Returns: 返回自身
+    func border(_ borderWidth: CGFloat) -> Self {
+        layer.borderWidth(borderWidth)
+        return self
+    }
+    
+    // MARK: 6.4 设置边线
+    /// - Parameter borderColor: 边线宽度
+    /// - Returns: 返回自身
+    func border(_ borderColor: UIColor) -> Self {
+        layer.borderColor(borderColor)
+        return self
+    }
+    
     // MARK: 6.3、图片的模式
     /// 图片的模式
     /// - Parameter mode: 模式
