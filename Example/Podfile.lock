@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - SDBaseClassLib (0.2.6)
+  - SDBaseClassLib (0.3.0.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SDBaseClassLib: ac4e8f18c1c0c0bd446d475443fbdafa7a3c5e95
+  SDBaseClassLib: 8fc0274758bef7393bf64f1a6ec06cd7aae99bfd
 
 PODFILE CHECKSUM: 789963a5c1cd5d3da6c549c77edb92396813acbb
 

@@ -1070,9 +1070,9 @@ public extension SDPOP where Base : UIView {
     ///   - gradientLocations: 决定每个渐变颜色的终止位置，这些值必须是递增的，数组的长度和 colors 的长度最好一致
     func gradientColor(_ direction: SDViewGradientDirection = .horizontal, _ gradientColors: [Any], _ gradientLocations: [NSNumber]? = nil) {
         // 获取渐变对象
-        let gradientLayer = CAGradientLayer().jk.gradientLayer(direction, gradientColors, gradientLocations)
+        let gradientLayer = CAGradientLayer().sd.gradientLayer(direction, gradientColors, gradientLocations)
         // 设置其CAGradientLayer对象的frame，并插入view的layer
-        gradientLayer.frame = CGRect(x: 0, y: 0, width: self.base.jk.width, height: self.base.jk.height)
+        gradientLayer.frame = CGRect(x: 0, y: 0, width: self.base.sd.width, height: self.base.sd.height)
         self.base.layer.insertSublayer(gradientLayer, at: 0)
     }
     
@@ -1085,9 +1085,9 @@ public extension SDPOP where Base : UIView {
     ///   - gradientLocations: 决定每个渐变颜色的终止位置，这些值必须是递增的，数组的长度和 colors 的长度最好一致
     func gradientColorAnimation(direction: SDViewGradientDirection = .horizontal, startGradientColors: [Any], endGradientColors: [Any], duration: CFTimeInterval = 1.0, gradientLocations: [NSNumber]? = nil) {
         // 获取渐变对象
-        let gradientLayer = CAGradientLayer().jk.gradientLayer(direction, startGradientColors, gradientLocations)
+        let gradientLayer = CAGradientLayer().sd.gradientLayer(direction, startGradientColors, gradientLocations)
         // 设置其CAGradientLayer对象的frame，并插入view的layer
-        gradientLayer.frame = CGRect(x: 0, y: 0, width: self.base.jk.width, height: self.base.jk.height)
+        gradientLayer.frame = CGRect(x: 0, y: 0, width: self.base.sd.width, height: self.base.sd.height)
         self.base.layer.insertSublayer(gradientLayer, at: 0)
         
         startgradientColorAnimation(gradientLayer, startGradientColors, endGradientColors, duration)

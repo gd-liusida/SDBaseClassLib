@@ -1885,7 +1885,7 @@ public extension SDPOP where Base == String {
         do {
             returnStr = try PropertyListSerialization.propertyList(from: tempData!, options: [.mutableContainers], format: nil) as! String
         } catch {
-            JKPrint(error)
+            SDPrint(error)
         }
         return returnStr.replacingOccurrences(of: "\\r\\n", with: "\n")
     }
