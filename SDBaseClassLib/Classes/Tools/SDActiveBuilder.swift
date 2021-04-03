@@ -44,7 +44,7 @@ struct SDActiveBuilder {
                 continue
             }
 
-            let trimmedWord = word[..<maxLength]
+            let trimmedWord = word.sd.sub(to: maxLength)
             text = text.replacingOccurrences(of: word, with: trimmedWord)
 
             let newRange = (text as NSString).range(of: trimmedWord)

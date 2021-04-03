@@ -1734,7 +1734,7 @@ public extension SDPOP where Base: ExpressibleByStringLiteral {
     ///   - key: 加密的key
     ///   - encode: 是编码还是解码
     /// - Returns: 编码或者解码后的字符串
-    func scaCrypt(cryptType: DDYSCAType, key: String?, encode: Bool) -> String? {
+    func scaCrypt(cryptType: SDDDYSCAType, key: String?, encode: Bool) -> String? {
 
         let strData = encode ? (self.base as! String).data(using: .utf8) : Data(base64Encoded: (self.base as! String))
         // 创建数据编码后的指针
@@ -1820,7 +1820,7 @@ public extension SDPOP where Base: ExpressibleByStringLiteral {
     ///   - key: 加密的key
     ///   - lower: 大写还是小写，默认小写
     /// - Returns: 解密以后的字符串
-    func shaCrypt(cryptType: DDYSHAType = .SHA1, key: String?, lower: Bool = true) -> String? {
+    func shaCrypt(cryptType: SDDDYSHAType = .SHA1, key: String?, lower: Bool = true) -> String? {
         guard let cStr = (self.base as! String).cString(using: String.Encoding.utf8) else {
             return nil
         }
