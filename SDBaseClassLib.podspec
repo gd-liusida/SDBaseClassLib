@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SDBaseClassLib'
-  s.version          = '1.0.4'
-  s.summary          = '基类常用类方法'
+  s.version          = '1.0.5'
+  s.summary          = '常用类方法和Swift版本的一个扩展'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = '这是常用方法和Swift版本扩展的一个详细的使用，可以参考里面的用法'
 
   s.homepage         = 'https://github.com/gd-liusida/SDBaseClassLib'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -31,6 +29,9 @@ TODO: Add long description of the pod here.
   s.swift_versions   = '5.0'
   s.platform         = :ios, '9.0'
   s.ios.deployment_target = '9.0'
+  
+  # 要求是ARC
+  s.requires_arc = true
 
   s.source_files = 'SDBaseClassLib/Classes/**/*'
   
