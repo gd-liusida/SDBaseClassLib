@@ -23,7 +23,7 @@ public enum SDPopMenuConfigure {
     case alpha(CGFloat)              //菜单背景透明度
 }
 
-class SDPopMenu: UIView {
+public class SDPopMenu: UIView {
 
     //delegate
     weak var delegate : SDPopMenuDelegate?

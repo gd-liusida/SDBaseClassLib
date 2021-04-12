@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SDBaseClassLib'
-  s.version          = '1.0.5'
+  s.version          = '1.0.6'
   s.summary          = '常用类方法和Swift版本的一个扩展'
 
 # This description is used to generate tags and improve search results.
