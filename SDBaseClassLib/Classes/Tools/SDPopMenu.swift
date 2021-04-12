@@ -69,44 +69,45 @@ public class SDPopMenu: UIView {
     ///   - arrow: 箭头位置是popmenu相对整个屏幕的位置
     ///   - datas: 数据源，icon允许传空，数据源没数据，不会显示菜单
     ///   - configure: 配置信息，可不传
-       public  init(menuWidth:CGFloat,arrow:CGPoint,datas:[(icon:String?,title:String)],configures:[SDPopMenuConfigure] = []) {
-           super.init(frame: UIScreen.main.bounds)
-           self.frame = UIScreen.main.bounds
-           //读取配置
-           configures.forEach { (config) in
-               switch (config){
-                   case let .textFont(value):
-                       textFont = value
-                   case let .textColor(value):
-                       textColor = value
-                   case let .backgroudColor(value):
-                       bgColor = value
-                   case let .cornorRadius(value):
-                       cornorRadius = value
-                   case let .itemHeight(value):
-                       itemHeight = value
-                   case let .splitLineColor(value):
-                       splitLineColor = value
-                   case let .leftMargin(value):
-                       leftMargin = value
-                   case let .margin(value):
-                       margin = value
-                   case let .alpha(value):
-                       outAlpha = value
-               }
+    public  init(menuWidth:CGFloat,arrow:CGPoint,datas:[(icon:String?,title:String)],configures:[SDPopMenuConfigure] = [], delegate: SDPopMenuDelegate? = nil) {
+        super.init(frame: UIScreen.main.bounds)
+        self.frame = UIScreen.main.bounds
+        //读取配置
+        configures.forEach { (config) in
+           switch (config){
+               case let .textFont(value):
+                   textFont = value
+               case let .textColor(value):
+                   textColor = value
+               case let .backgroudColor(value):
+                   bgColor = value
+               case let .cornorRadius(value):
+                   cornorRadius = value
+               case let .itemHeight(value):
+                   itemHeight = value
+               case let .splitLineColor(value):
+                   splitLineColor = value
+               case let .leftMargin(value):
+                   leftMargin = value
+               case let .margin(value):
+                   margin = value
+               case let .alpha(value):
+                   outAlpha = value
            }
-           
-           self.data = datas
-           //设置myFrame size  ,original会在后面计算
-           myFrame = CGRect(x: 0, y: 0, width: menuWidth, height: itemHeight*CGFloat(data.count))
-           myFrame.size.height = min(kScreenH/2, myFrame.height)
-           myFrame.size.width = min(kScreenW-margin*2, myFrame.width)
-           
-           //设置肩头，与屏幕间隔10
-           arrowPoint = arrow
-           arrowPoint.x = max(margin, min(arrowPoint.x, kScreenW-margin))
-       
        }
+       
+       self.data = datas
+        self.delegate = delegate
+        //设置myFrame size  ,original会在后面计算
+        myFrame = CGRect(x: 0, y: 0, width: menuWidth, height: itemHeight*CGFloat(data.count))
+        myFrame.size.height = min(kScreenH/2, myFrame.height)
+        myFrame.size.width = min(kScreenW-margin*2, myFrame.width)
+           
+        //设置肩头，与屏幕间隔10
+        arrowPoint = arrow
+        arrowPoint.x = max(margin, min(arrowPoint.x, kScreenW-margin))
+       
+    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
