@@ -335,7 +335,7 @@ class SDPopMenuCell: UITableViewCell, SDReusable {
     override func layoutSubviews() {
         super.layoutSubviews()
         print(self.bounds)
-        if isHiddenIcon {
+        if !isHiddenIcon {
             self.iconImage.frame = CGRect(x: leftMargin, y: (self.bounds.size.height - 20)/2, width: 20, height: 20)
             self.lblTitle.frame = CGRect(x: 20 + leftMargin * 2, y: 0, width: self.bounds.size.width - 40, height: self.bounds.size.height)
         } else {
